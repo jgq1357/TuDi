@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+<package name="htgl-default" namespace="/htgl" extends="land-default">
+	<action name="psjdr" class="com.land.actions.htgl.PreLoadAction">
+		<result name="success">/WEB-INF/htgl/drsj.jsp</result>
+	</action>
+	<action name="sjdr" class="com.land.actions.htgl.LoadAction">
+		<result name="success">/WEB-INF/htgl/loadResult.jsp</result>
+		<result name="input">/WEB-INF/htgl/loadResult.jsp</result>
+	</action>
+	
+	<action name="ocrpage">
+		<result>/WEB-INF/htgl/ocrupload.jsp</result>
+	</action>
+	
+	<action name="ocr" class="com.land.actions.htgl.OCRAction">
+		<result name="success">/WEB-INF/htgl/ocrshow.jsp</result>
+		<result name="input">/WEB-INF/htgl/ocrupload.jsp</result>
+	</action>
+	
+		<action name="image" class="com.land.actions.htgl.ImageAction">
+		<result name="success" type="stream">
+			<param name="inputName">imageStream</param>
+		</result>
+	</action>
+	
+	<action name="bigpage" class="com.land.actions.htgl.PreBigClassAction">
+		<result name="success">/WEB-INF/htgl/addbigclass.jsp</result>
+	</action>
+	
+	<action name="addbigclass" class="com.land.actions.htgl.BigClassAction">
+		<result name="success" type="json"></result>
+	</action>
+	
+	<action name="smallpage" class="com.land.actions.htgl.PreSmallClassAction">
+		<result name="success">/WEB-INF/htgl/addsmallclass.jsp</result>
+		<result name="json" type="json"></result>
+	</action>
+	
+	<action name="addsmallclass" class="com.land.actions.htgl.SmallClassAction">
+		<result name="success" type="json"></result>
+	</action>
+
+</package>
+</struts>

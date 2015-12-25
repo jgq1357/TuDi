@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+<package name="quanxian-default" namespace="/quanxian" extends="land-default">
+	
+		<action name="addpage" class="com.land.actions.quanxian.FirstPageAction">
+			<result name="success">/WEB-INF/quanxian/adduser.jsp</result>
+		</action>
+		
+		<action name="adduser" class="com.land.actions.quanxian.AddUserAction">
+			<result name="success">/WEB-INF/quanxian/addinfo.jsp</result>
+			<result name="input">/WEB-INF/quanxian/adduser.jsp</result>
+		</action>
+		
+		<action name="updatepage" class="com.land.actions.quanxian.UpdatePageAction">
+			<result name="success">/WEB-INF/quanxian/updateuserlist.jsp</result>
+		</action>
+		
+		<action name="queryUser" class="com.land.actions.quanxian.QueryUserAction">
+			<result name="success">/WEB-INF/quanxian/updateuserlist.jsp</result>
+		</action>
+		
+		<action name="deleteuser" class="com.land.actions.quanxian.DeleteUserAction">
+			<result name="success" type="json"></result>
+		</action>
+		
+		<action name="updateuserpage" class="com.land.actions.quanxian.UpdateUserPageAction">
+			<result name="success">/WEB-INF/quanxian/updateuser.jsp</result>
+		</action>
+		
+		<action name="updateuser" class="com.land.actions.quanxian.UpdateUserAction">
+			<result name="success" type="json"></result>
+		</action>
+		
+		<action name="rolegl" class="com.land.actions.quanxian.RoleManageAction">
+			<result name="success">/WEB-INF/quanxian/rolemanage.jsp</result>
+		</action>
+		
+		<action name="deleterole" class="com.land.actions.quanxian.DeleteRoleAction">
+			<result name="success" type="json"></result>
+		</action>
+		
+		<action name="addrole" class="com.land.actions.quanxian.AddRoleAction">
+			<result name="success" type="json"></result>
+		</action>
+		
+		<action name="addrolepage" class="com.land.actions.quanxian.AddRolePageAction">
+			<result name="success">/WEB-INF/quanxian/addrole.jsp</result>
+		</action>
+		
+		<action name="roleuserlist" class="com.land.actions.quanxian.RoleUserListAction">
+			<result name="success">/WEB-INF/quanxian/roleuserlist.jsp</result>
+		</action>
+		
+		<action name="updateSysParams" class="com.land.actions.quanxian.UpdateSysParamsAction">
+			<result name="success">/WEB-INF/quanxian/updateSysParams.jsp</result>
+		</action>
+</package>
+</struts>

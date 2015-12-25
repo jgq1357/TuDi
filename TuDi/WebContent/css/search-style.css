@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+
+
+#result_table th{
+	background:#eceadd;
+	border:1px solid #ccc;
+	border-style: outset;
+	font-weight:normal
+}
+
+

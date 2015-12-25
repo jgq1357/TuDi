@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+<package name="user-default" namespace="/user" extends="land-default">
+	
+		<action name="login" class="com.land.actions.user.LoginAction">
+			<result name="success">/WEB-INF/index.jsp</result>
+			<result name="input">/WEB-INF/login.jsp</result>
+			<result name="fail">/WEB-INF/login.jsp</result>
+		</action>
+		<action name="logout" class="com.land.actions.user.LoginOutAction">
+			<result name="success">/WEB-INF/login.jsp</result>
+		</action>
+		<action name="top">
+			<result>/WEB-INF/top.jsp</result>
+		</action>
+		<action name="left" class="com.land.actions.user.MenuAction">
+			<result name="success">/WEB-INF/left.jsp</result>
+		</action>
+		<action name="main">
+			<result>/WEB-INF/main.jsp</result>
+		</action>
+		<action name="middle">
+			<result>/WEB-INF/middle.jsp</result>
+		</action>
+		
+</package>
+</struts>

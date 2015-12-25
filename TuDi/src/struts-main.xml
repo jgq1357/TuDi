@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+<package name="main-default" namespace="/main" extends="land-default">
+
+	<action name="printInFo_DJYW" class="com.land.actions.main.PrintDJYWAction">
+		<result name="success">
+			/WEB-INF/main/printInFo_djyw.jsp
+		</result>
+	
+	</action>
+	<action name="all" class="com.land.actions.main.DjywAction">
+		<result name="success">
+			/WEB-INF/main/searchResult.jsp
+		</result>
+	</action>
+	
+	<action name="yxml" class="com.land.actions.main.YxmlAction">
+		<result name="success">
+			/WEB-INF/main/yxml.jsp
+		</result>
+	</action>
+	
+	<action name="print" class="com.land.actions.main.PrintAction">
+		<result name="success">
+			/WEB-INF/main/printpage.jsp
+		</result>
+	</action>
+	<action name="printset" class="com.land.actions.main.PrintsetAction">
+		<result name="success">
+			/WEB-INF/main/printset.jsp
+		</result>
+	</action>
+	
+	<action name="yxtop">
+		<result name="success">
+			/WEB-INF/main/yxtop.jsp
+		</result>
+	</action>
+	
+	<action name="yxxs" class="com.land.actions.main.YxxsAction">
+		<result name="success">/WEB-INF/main/yxxs.jsp</result>
+		<result name="input">
+			/WEB-INF/main/errorResult.jsp
+		</result>
+	</action>
+	
+	<action name="searchs">
+		<result>/WEB-INF/main/search.jsp</result>
+	</action>
+	
+	<action name="search" class="com.land.actions.main.SearchAction">
+		<result>/WEB-INF/main/searchResult.jsp</result>
+	</action>
+	
+	<action name="presearch" class="com.land.actions.main.PreSearchAction">
+		<result>/WEB-INF/main/searchPage.jsp</result>
+	</action>
+	
+	<action name="showTiff" class="com.land.actions.main.ShowTiffAction">
+		<result name="success">
+			/WEB-INF/main/showtiff.jsp
+		</result>
+		
+	</action>
+	
+	<action name="showDjywAllInfo" class="com.land.actions.main.DjywInfoAction">
+		<result name="success">
+			/WEB-INF/main/allInfo_djyw.jsp
+		</result>
+	</action>
+	
+	<action name="showGtzyjclAllInfo" class="com.land.actions.main.GtzyjclInfoAction">
+		<result name="success">
+			/WEB-INF/main/allInfo_gtzyjcl.jsp
+		</result>
+	</action>
+	
+	<action name="showTdlyghlAllInfo" class="com.land.actions.main.TdlyghlInfoAction">
+		<result name="success">
+			/WEB-INF/main/allInfo_tdlyghl.jsp
+		</result>
+	</action>
+	
+	<action name="showDklAllInfo" class="com.land.actions.main.DklInfoAction">
+		<result name="success">
+			/WEB-INF/main/allInfo_dkl.jsp
+		</result>
+	</action>
+	
+	<action name="showJsydlAllInfo" class="com.land.actions.main.JsydlInfoAction">
+		<result name="success">
+			/WEB-INF/main/allInfo_jsydl.jsp
+		</result>
+	</action>
+	<action name="showZhwslAllInfo" class="com.land.actions.main.ZhwslInfoAction">
+		<result name="success">
+			/WEB-INF/main/allInfo_zhwsl.jsp
+		</result>
+	</action>
+	
+	<action name="allInfo" class="com.land.actions.main.ShowAllInfoAction">
+		<result name="success">
+			/WEB-INF/main/showAllInfo.jsp
+		</result>
+	</action>
+	<action name="water" class="com.land.actions.main.WaterAction">
+		<result name="success" type="stream">
+			<param name="inputName">imageStream</param>
+		</result>
+	</action>
+	
+	<action name="waterJson" class="com.land.actions.main.WaterAction">
+		<result name="success" type="json"></result>
+	</action>
+	
+	<action name="applog" class="com.land.actions.main.AppLogAction">
+		<result name="success">
+			/WEB-INF/main/showLog.jsp
+		</result>
+	</action>
+	
+	<action name="guide">
+		<result>
+			/WEB-INF/main/guide.jsp
+		</result>
+	</action>
+	
+	<action name="super">
+		<result>
+			/WEB-INF/main/superSearch.jsp
+		</result>
+	</action>
+	<action name="superSearch" class="com.land.actions.main.SuperSearch">
+		<result name="success">
+			/WEB-INF/main/searchResult.jsp
+		</result>
+	</action>
+
+
+	
+	<action name="sorry">
+		<result>
+			/WEB-INF/sorry.jsp
+		</result>
+	</action>
+</package>
+</struts>

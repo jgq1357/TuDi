@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/land/actions/user/LoginInfoAction.java|com/land/actions/main/GtzyjcInfoAction.java|com/land/actions/main/GtzyjcSearchAction.java|com/land/actions/main/GtzyjcAction.java|com/land/daos/GtzyjcDAOImp.java|com/land/daos/GtzyjcDAO.java|com/land/daos/JsydDAO.java|com/land/daos/JsydDAOImp.java|com/land/actions/main/JsydAction.java|com/land/actions/main/JsydInfoAction.java|com/land/actions/main/JsydSearchAction.java|com/land/services/GtzyjcServiceImpl.java|com/land/services/JsydServiceImpl.java|com/land/domain/Jsyd.java|com/land/domain/Gtzyjc.java|com/land/services/GtzyjcService.java|com/land/services/JsydService.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_38"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.generic.runtimeTarget/JBoss v4.2">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/server/jboss-4.2.3.GA"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+<package name="work-default" namespace="/worktime" extends="land-default">
+	
+		<action name="apply" class="com.land.actions.worktime.ApplyAction">
+			<result name="success">/WEB-INF/worktime/apply.jsp</result>
+		</action>
+		
+		<action name="request" class="com.land.actions.worktime.RequestAction">
+			<result name="success">/WEB-INF/worktime/applylist.jsp</result>
+		</action>
+		
+		<action name="tixing" class="com.land.actions.worktime.RemindAction">
+			<result name="success">/WEB-INF/worktime/tixing.jsp</result>
+		</action>
+		
+		<action name="tixingJson" class="com.land.actions.worktime.RemindAction">
+			<result name="success" type="json"></result>
+		</action>
+		
+		<action name="list" class="com.land.actions.worktime.ListAction">
+			<result name="success">/WEB-INF/worktime/applylist.jsp</result>
+		</action>
+		<action name="approve" class="com.land.actions.worktime.ApproveAction">
+			<result name="success">/WEB-INF/worktime/approvelist.jsp</result>
+		</action>
+		<action name="needApprove" class="com.land.actions.worktime.WaitApproveAction">
+			<result name="success">/WEB-INF/worktime/shenheresult.jsp</result>
+		</action>
+		<action name="approvelist" class="com.land.actions.worktime.ApproveListAction">
+			<result name="success">/WEB-INF/worktime/approvelist.jsp</result>
+		</action>
+		<action name="cpassword">
+			<result>/WEB-INF/worktime/cpassword.jsp</result>
+		</action>
+		<action name="changePassword" class="com.land.actions.worktime.ChangePasswordAction">
+			<result name="success">/WEB-INF/worktime/repasswordInfo.jsp</result>
+			<result name="input">/WEB-INF/worktime/cpassword.jsp</result>
+		</action>
+</package>
+</struts>
